@@ -14,7 +14,7 @@ body {
 }
 
 .option-label {
-	width: 6em;
+	width: 9em;
 	display: inline-block;
 	text-align: right;
 }
@@ -29,7 +29,6 @@ controls {
 	margin: 0 auto;
 	width: 30em;
 	background-color: #e5e5e5;
-	text-align: center;
 	padding: 1em;
 	box-shadow: 0 0.2em 0.2em #AAA inset;
 	border-radius: 0.5em;
@@ -67,6 +66,7 @@ logheader {
 		color-stop(0.26, rgb(237,237,237)),
 		color-stop(0.72, rgb(255,255,255))
 	);
+	cursor: default;
 }
 
 logentry {
@@ -75,6 +75,7 @@ logentry {
 	padding: 0;
 	width: 100%;
 	box-sizing: border-box;
+	cursor: default;
 }
 
 logentry:hover {
@@ -93,6 +94,10 @@ logheader .loglogarithm {
 }
 
 controls input[type=range] {
-	width: 16em;
+	width: 19em;
 	vertical-align: -0.4em;
+}
+
+#renderbtn {
+	cursor: pointer;
 }

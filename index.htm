@@ -10,18 +10,21 @@
 			This can only be shown when your browser supports Canvas.
 		</canvas>
 		<controls>
-			<span class="option-label">Iterations:</span>
-			<input id="iterations" type="range" min="0" max="255" value="10" step="5" title="Adjust the number of iterations rendered. More takes longer to render, but shows more detail." />
-			<span id="iterationsdisplay" class="option-readout">10</span>
+			<label class="option-label" for="iterations">Iterations:</label>
+			<input id="iterations" type="range" min="1" max="255" value="10" step="1" title="Adjust the number of iterations rendered. More takes longer to render, but shows more detail." />
+			<label id="iterationsdisplay" class="option-readout" for="iterations">10</label>
 			<br/>
 			<br/>
-			<span class="option-label">Adjust Hue:</span>
+			<label class="option-label" for="hueadj">Adjust Hue:</label>
 			<input id="hueadj" type="range" min="0" max="360" value="0" step="1" title="Offset the Hue. This doesn't affect rendering time, but changes the colours which will be used." />
-			<span id="huedisplay" class="option-readout">0</span>
+			<label id="huedisplay" class="option-readout" for="hueadj">0</label>
 			<br/>
+			<br/>
+			<label class="option-label">&nbsp;</label>
 			<input id="logcolor" type="checkbox" title="Adjusts the algorightm that chooses colours to use a logarithmic scale. If this option is on, more variation in colour is visible, at the cost of some detail."></input><label for="logcolor" title="Adjusts the algorightm that chooses colours to use a logarithmic scale. If this option is on, more variation in colour is visible, at the cost of some detail.">Use Logarithmic Colour Scale</label>
 			<br/>
 			<br/>
+			<label class="option-label">&nbsp;</label>
 			<button type="button" id="renderbtn">Render</button>
 		</controls>
 		<logheader><span class='logtime'>Time Taken</span><span class='logits'>Iterations</span><span class='loglogarithm'>Using Logarithms</span></logheader>
