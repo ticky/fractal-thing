@@ -113,6 +113,20 @@ function draw(currentx)
 
 }
 
+/**
+ * Converts an HSV color value to RGB. Conversion formula
+ * adapted from http://en.wikipedia.org/wiki/HSV_color_space.
+ * Assumes h, s, and v are contained in the set [0, 1] and
+ * returns r, g, and b in the set [0, 255].
+ *
+ * Source: http://mjijackson.com/2008/02/rgb-to-hsl-and-rgb-to-hsv-color-model-conversion-algorithms-in-javascript
+ * License: Assumed to be WTFPL.
+ *
+ * @param   Number  h       The hue
+ * @param   Number  s       The saturation
+ * @param   Number  v       The value
+ * @return  Array           The RGB representation
+ */
 function hsvToRgb(h, s, v)
 {
 
@@ -135,6 +149,7 @@ function hsvToRgb(h, s, v)
 
 	}
 
+	// This line has been modified from the original function to meet our needs.
 	return "rgb(" + Math.round(r * 255) + "," + Math.round(g * 255) + "," + Math.round(b * 255) + ")";
 
 }
