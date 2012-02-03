@@ -1,7 +1,7 @@
 <!doctype HTML>
 <html>
 	<head>
-		<title>Mandelbrot Renderer</title>
+		<title>Fractal Thing</title>
 		<link rel="stylesheet" type="text/css" href="fractal.css"/>
 		<script type="text/javascript" src="fractal.js"></script>
 	</head>
@@ -11,12 +11,12 @@
 		</canvas>
 		<controls>
 			<span class="option-label">Iterations:</span>
-			<input id="iterations" type="range" min="0" max="255" value="10" step="5" onchange="updatesliderlabel(this.value, 'iterationsdisplay')" title="Adjust the number of iterations rendered. More takes longer to render, but shows more detail." />
+			<input id="iterations" type="range" min="0" max="255" value="10" step="5" title="Adjust the number of iterations rendered. More takes longer to render, but shows more detail." />
 			<span id="iterationsdisplay" class="option-readout">10</span>
 			<br/>
 			<br/>
 			<span class="option-label">Adjust Hue:</span>
-			<input id="hueadj" type="range" min="0" max="360" value="0" step="1" onchange="updatesliderlabel(this.value, 'huedisplay')" title="Offset the Hue. This doesn't affect rendering time, but changes the colours which will be used." />
+			<input id="hueadj" type="range" min="0" max="360" value="0" step="1" title="Offset the Hue. This doesn't affect rendering time, but changes the colours which will be used." />
 			<span id="huedisplay" class="option-readout">0</span>
 			<br/>
 			<input id="logcolor" type="checkbox" title="Adjusts the algorightm that chooses colours to use a logarithmic scale. If this option is on, more variation in colour is visible, at the cost of some detail."></input><label for="logcolor" title="Adjusts the algorightm that chooses colours to use a logarithmic scale. If this option is on, more variation in colour is visible, at the cost of some detail.">Use Logarithmic Colour Scale</label>
