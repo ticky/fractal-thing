@@ -48,9 +48,9 @@ log {
 
 logheader {
 	display: block;
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
-	width: 100%;
+	width: 30em;
 	background-color: #ededed;
 	border: 1px solid #b6b6b6;
 	box-sizing: border-box;

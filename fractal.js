@@ -1,19 +1,19 @@
 function draw(currentx)
 {
 
-	if(currentx == 0)
-	{
-
-		// Start Timer
-		testingtimerstart = new Date();
-
-	}
-
 	// Detect Canvas Support
 	var displayCanvas = document.getElementById('display');
 
 	if (displayCanvas.getContext)
 	{
+
+		if(currentx == 0)
+		{
+
+			// Start Timer
+			testingtimerstart = new Date();
+
+		}
 
 		var displayContext = displayCanvas.getContext('2d');
 
@@ -165,8 +165,8 @@ function setup()
 {
 
 	document.getElementById('renderbtn').onclick	= function() { draw(0); };
-	document.getElementById('iterations').onclick	= function() { updatesliderlabel(document.getElementById('iterations').value, 'iterationsdisplay') };
-	document.getElementById('hueadj').onclick		= function() { updatesliderlabel(document.getElementById('hueadj').value, 'huedisplay') };
+	document.getElementById('iterations').onchange	= function() { updatesliderlabel(this.value, 'iterationsdisplay') };
+	document.getElementById('hueadj').onchange		= function() { updatesliderlabel(this.value, 'huedisplay') };
 
 }
 
