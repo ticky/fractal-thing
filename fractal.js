@@ -120,7 +120,7 @@ function draw(currentx)
  * returns r, g, and b in the set [0, 255].
  *
  * Source: http://mjijackson.com/2008/02/rgb-to-hsl-and-rgb-to-hsv-color-model-conversion-algorithms-in-javascript
- * License: Assumed to be WTFPL.
+ * License: Unknown. Request pending.
  *
  * @param   Number  h       The hue
  * @param   Number  s       The saturation
